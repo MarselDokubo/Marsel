@@ -48,7 +48,12 @@ const Hero = () => {
                 { duration: 0.5 },
             ],
         ]);
-    }, []);
+    }, [
+        leftDesignAnimate,
+        leftPointerAnimate,
+        rightDesignAnimate,
+        rightPointerAnimate,
+    ]);
 
     return (
         <section

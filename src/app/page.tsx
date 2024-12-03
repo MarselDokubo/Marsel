@@ -26,7 +26,7 @@ const sections = [
 
 export default function Home() {
     const [visibleSection, setVisibleSection] = useState(sections[0].id);
-    // @ts-expect-error
+    // @ts-expect-error ignore the type error. I don't know the type
     const setInView = (inView, entry) => {
         if (inView) {
             setVisibleSection(entry.target.getAttribute("id"));
