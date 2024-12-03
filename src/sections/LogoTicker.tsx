@@ -1,10 +1,5 @@
 "use client";
 
-import pulseLogo from "@/assets/images/pulse.svg";
-import outsideLogo from "@/assets/images/outside.svg";
-import apexLogo from "@/assets/images/apex.svg";
-import celestialLogo from "@/assets/images/celestial.svg";
-import twiceLogo from "@/assets/images/twice.svg";
 import nextLogo from "@/assets/images/lang-icons/nextjs.svg";
 import reactLogo from "@/assets/images/lang-icons/react.svg";
 import tailwindLogo from "@/assets/images/lang-icons/tailwindcss.svg";

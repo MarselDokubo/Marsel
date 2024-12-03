@@ -5,7 +5,6 @@ import slackLogo from "@/assets/images/slack-logo.svg";
 import relumeLogo from "@/assets/images/relume-logo.svg";
 import framerLogo from "@/assets/images/framer-motion.svg";
 import githubLogo from "@/assets/images/github-logo.svg";
-import Image from "next/image";
 import IntegrationColumn from "@/components/integration-column";
 
 const integrations = [

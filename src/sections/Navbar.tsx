@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import logoImage from "@/assets/images/logo_svg.svg";
-import Button from "@/components/button";
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 import { HireMeBtn } from "@/components/hire-btn";

@@ -16,7 +16,7 @@ const faqs = [
     },
     {
         question: "Do you work remotely?",
-        answer: "Yes I do. I've worked remotely before and have all the tools and setup I need to stay productive and in sync with a team.",
+        answer: "Yes I do. I&apos;ve worked remotely before and have all the tools and setup I need to stay productive and in sync with a team.",
     },
 ];
 

@@ -9,9 +9,8 @@ import Integrations from "@/sections/Integrations";
 import Introduction from "@/sections/Introduction";
 import LogoTicker from "@/sections/LogoTicker";
 import Navbar from "@/sections/Navbar";
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { InView } from "react-intersection-observer";
-import { createContext } from "vm";
 
 const sections = [
     { id: "navigation", element: <Navbar /> },
@@ -27,7 +26,8 @@ const sections = [
 
 export default function Home() {
     const [visibleSection, setVisibleSection] = useState(sections[0].id);
-    const setInView = (inView: boolean, entry: any) => {
+    // @ts-ignore
+    const setInView = (inView, entry) => {
         if (inView) {
             setVisibleSection(entry.target.getAttribute("id"));
         }

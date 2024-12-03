@@ -11,7 +11,7 @@ export default function CallToAction() {
             { x: "-50%" },
             { duration: 120, ease: "linear", repeat: Infinity }
         );
-    }, []);
+    }, [animate, scope]);
     useEffect(() => {
         if (animation.current) {
             if (isHovered) {
@@ -37,7 +37,7 @@ export default function CallToAction() {
                         >
                             <span className="text-lime-400 ">&#10038;</span>
                             <span className="uppercase group-hover:text-lime-500">
-                                I'll be seeing ya
+                                I&apos;ll be seeing ya
                             </span>
                         </div>
                     ))}
