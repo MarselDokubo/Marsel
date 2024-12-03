@@ -67,21 +67,21 @@ const Hero = () => {
                     ref={leftDesignScope}
                     initial={{ opacity: 0, y: 100, x: -100 }}
                     drag
-                    className="absolute -left-32 top-16 hidden lg:block"
+                    className="absolute -left-32 top-16 hidden"
                 >
                     <Image src={designExample1Image} alt="" draggable="false" />
                 </motion.div>
                 <motion.div
                     ref={leftPointerScope}
                     initial={{ opacity: 0, y: 100, x: -200 }}
-                    className="absolute left-56 top-96 hidden lg:block"
+                    className="absolute left-56 top-96 hidden"
                 >
                     <Pointer name="Explore" />
                 </motion.div>
                 <motion.div
                     ref={rightDesignScope}
                     initial={{ opacity: 0, x: 100, y: 100 }}
-                    className="absolute -right-64 -top-16 hidden lg:block"
+                    className="absolute -right-64 -top-16 hidden"
                     drag
                 >
                     <Image src={designExample2Image} alt="" draggable="false" />
@@ -90,7 +90,7 @@ const Hero = () => {
                 <motion.div
                     ref={rightPointerScope}
                     initial={{ opacity: 0, x: 275, y: 100 }}
-                    className="absolute right-80 -top-4 hidden lg:block"
+                    className="absolute right-80 -top-4 hidden"
                 >
                     <Pointer name="Show Reel" color="red" />
                 </motion.div>
