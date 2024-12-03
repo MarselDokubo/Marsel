@@ -16,7 +16,7 @@ const faqs = [
     },
     {
         question: "Do you work remotely?",
-        answer: "Yes I do. I&apos;ve worked remotely before and have all the tools and setup I need to stay productive and in sync with a team.",
+        answer: "Yes I do. I've worked remotely before and have all the tools and setup I need to stay productive and in sync with a team.",
     },
 ];
 
@@ -29,7 +29,7 @@ export default function Faqs() {
                     <Tag>FAQs</Tag>
                 </div>
                 <h2 className="text-5xl md:text-7xl  font-medium mt-6 text-center max-w-xl mx-auto">
-                    Questions? I've got{" "}
+                    Questions? I&apos;ve got{" "}
                     <span className="text-lime-400">answers.</span>
                 </h2>
                 <div className="mt-12 flex flex-col gap-6 max-w-xl mx-auto">

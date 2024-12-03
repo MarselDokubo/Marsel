@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import logoImage from "@/assets/images/logo_svg.svg";
-import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 import { HireMeBtn } from "@/components/hire-btn";
 import HomeIcon from "@/assets/images/nav-icons/house";
@@ -11,7 +10,6 @@ import FAQIcon from "@/assets/images/nav-icons/faq-icon";
 import { useFragmentContext } from "@/context/fragment-provider";
 
 export default function Navbar() {
-    const [isOpen, setIsOpen] = useState(false);
     const currentSection = useFragmentContext();
 
     return (

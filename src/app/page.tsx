@@ -26,7 +26,7 @@ const sections = [
 
 export default function Home() {
     const [visibleSection, setVisibleSection] = useState(sections[0].id);
-    // @ts-ignore
+    // @ts-expect-error
     const setInView = (inView, entry) => {
         if (inView) {
             setVisibleSection(entry.target.getAttribute("id"));
