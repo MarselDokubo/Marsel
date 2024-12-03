@@ -34,7 +34,9 @@ export default function IntegrationColumn(props: {
                         >
                             <div className="flex justify-center">
                                 <Image
-                                    src={integration.icon as StaticImport}
+                                    src={
+                                        integration.icon as unknown as StaticImport
+                                    }
                                     alt=""
                                     className="size-24"
                                 />
