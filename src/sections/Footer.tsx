@@ -1,4 +1,5 @@
 import logoImage from "@/assets/images/logo_svg.svg";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
 const footerLinks = [
     { href: "#", label: "Gtihub" },
@@ -14,7 +15,7 @@ export default function Footer() {
                 <div className="flex flex-col md:flex-row md:justify-between items-center gap-6">
                     <div className="">
                         <Image
-                            src={logoImage}
+                            src={logoImage as unknown as StaticImport}
                             alt="logo image"
                             className="h-9 w-auto"
                         />
