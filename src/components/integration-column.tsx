@@ -5,6 +5,7 @@ import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 import { motion } from "framer-motion";
 import { Fragment } from "react";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 export default function IntegrationColumn(props: {
     integrations: IntegrationsType;
     className?: string;
@@ -33,8 +34,7 @@ export default function IntegrationColumn(props: {
                         >
                             <div className="flex justify-center">
                                 <Image
-                                    // @ts-nocheck
-                                    src={integration.icon}
+                                    src={integration.icon as StaticImport}
                                     alt=""
                                     className="size-24"
                                 />
