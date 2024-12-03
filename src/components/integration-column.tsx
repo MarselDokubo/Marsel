@@ -33,6 +33,7 @@ export default function IntegrationColumn(props: {
                         >
                             <div className="flex justify-center">
                                 <Image
+                                    // @ts-nocheck
                                     src={integration.icon}
                                     alt=""
                                     className="size-24"
