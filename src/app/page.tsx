@@ -33,9 +33,6 @@ export default function Home() {
         }
     };
 
-    useEffect(() => {
-        window.location.hash = visibleSection;
-    }, [visibleSection]);
     return (
         <>
             {sections.map((section, index) => (
