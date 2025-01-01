@@ -9,7 +9,7 @@ import Integrations from "@/sections/Integrations";
 import Introduction from "@/sections/Introduction";
 import LogoTicker from "@/sections/LogoTicker";
 import Navbar from "@/sections/Navbar";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { InView } from "react-intersection-observer";
 
 const sections = [
