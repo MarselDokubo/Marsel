@@ -7,7 +7,7 @@ import Pointer from "@/components/pointer";
 import { motion, useAnimate } from "framer-motion";
 import { useEffect } from "react";
 import cursorYouImage from "@/assets/images/cursor-you.svg";
-import portrait from "@/assets/images/portrait.jpg";
+import portrait from "@/assets/images/web-portrait.png";
 
 const Hero = () => {
     const [leftDesignScope, leftDesignAnimate] = useAnimate();
@@ -58,7 +58,7 @@ const Hero = () => {
 
     return (
         <section
-            className="hero py-16 md:py-12 mt-32 overflow-x-clip"
+            className="hero py-12 mt-20 md:mt-28 overflow-x-clip"
             style={{
                 cursor: `url(${cursorYouImage.src}), auto `,
             }}
@@ -96,7 +96,7 @@ const Hero = () => {
                     <Pointer name="Show Reel" color="red" />
                 </motion.div>
 
-                <div className="portrait size-28 rounded-full mx-auto mb-8">
+                <div className="portrait size-32 rounded-full mx-auto mb-4">
                     <Image src={portrait} alt="Profile Image" className="" />
                 </div>
                 <div className="flex justify-center">
@@ -114,9 +114,9 @@ const Hero = () => {
                     <span className="inline-block relative ">
                         {" "}
                         product.
-                        <span className="hidden md:block text-4xl text-lime-500 absolute -right-5 top-5 ">
+                        {/* <span className="hidden md:block text-4xl text-lime-500 absolute -right-5 top-5 ">
                             ⤸
-                        </span>
+                        </span> */}
                     </span>
                 </p>
                 <div className="flex rounded-full mt-8 justify-center items-center min-w-max max-w-lg mx-auto">

@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import { twMerge } from "tailwind-merge";
+import { Button } from "./ui/button";
 
 export default function FeatureCard(props: {
     children: ReactNode;
@@ -18,7 +19,9 @@ export default function FeatureCard(props: {
             <div className="image-container aspect-video">{children}</div>
             <div className="content">
                 <h3 className="text-3xl font-medium mt-6">{title}</h3>
-                <p className="text-white/50 mt-2">{description}</p>
+                <p className="text-white/50 mt-2">
+                    <Button variant={"link"}>Visit Site</Button>
+                </p>
             </div>
         </div>
     );

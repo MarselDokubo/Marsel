@@ -1,11 +1,9 @@
 import FeatureCard from "@/components/feature-card";
 import Tag from "@/components/tag";
-import avatar1 from "@/assets/images/avatar-ashwin-santiago.jpg";
-import avatar2 from "@/assets/images/avatar-lula-meyers.jpg";
-import avatar3 from "@/assets/images/avatar-florence-shaw.jpg";
+
 import Image from "next/image";
-import Avatar from "@/components/avatar";
-import Key from "@/components/key";
+import currateImg from "@/assets/images/portfolio/Currate.png";
+import dionysusImg from "@/assets/images/portfolio/Dionysus.png";
 const features = [
     "Interactive",
     "Pixel Perfect",
@@ -33,38 +31,12 @@ export default function Features() {
                         description="Work together seemlessly with conflict free team editing"
                         className="md:col-span-2"
                     >
-                        <div className="flex items-center justify-center aspect-video">
-                            <Avatar className="z-40">
-                                <Image
-                                    src={avatar1}
-                                    alt="avatar 1"
-                                    className="rounded-full"
-                                />
-                            </Avatar>
-                            <Avatar className="-ml-6 border border-indigo-500 z-30">
-                                <Image
-                                    src={avatar2}
-                                    alt="avatar 2"
-                                    className="rounded-full"
-                                />
-                            </Avatar>
-                            <Avatar className="-ml-6 border-amber-500 z-20">
-                                <Image
-                                    src={avatar3}
-                                    alt="avatar 3"
-                                    className="rounded-full"
-                                />
-                            </Avatar>
-                            <Avatar className="-ml-6 border border-transparent">
-                                <div className="size-full bg-neutral-700 rounded-full inline-flex items-center justify-center gap-1">
-                                    {Array.from({ length: 3 }).map((_, i) => (
-                                        <span
-                                            className="size-1.5 rounded-full bg-white inline-flex"
-                                            key={i}
-                                        ></span>
-                                    ))}
-                                </div>
-                            </Avatar>
+                        <div className="flex items-center justify-center aspect-video bg-slate-950 rounded-2xl overflow-hidden">
+                            <Image
+                                src={currateImg}
+                                className="rounded-2xl"
+                                alt=""
+                            />
                         </div>
                     </FeatureCard>
                     <FeatureCard
@@ -72,26 +44,26 @@ export default function Features() {
                         description="Engage your client with prototypes that react to user actions"
                         className="md:col-span-2"
                     >
-                        <div className="aspect-video  flex items-center justify-center">
-                            <p className="text-4xl font-extrabold text-white/20 text-center">
-                                We&apos;ve achieved{" "}
-                                <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                                    incredible
-                                </span>{" "}
-                                growth this year.
-                            </p>
-                        </div>
+                        <div className="flex items-center justify-center aspect-video bg-slate-950 rounded-2xl overflow-hidden">
+                            <Image
+                                src={dionysusImg}
+                                className="rounded-2xl"
+                                alt=""
+                            />
+                        </div>{" "}
                     </FeatureCard>
                     <FeatureCard
                         title="Keyboard Quick Action"
                         description="Powerful commands to help you create design more quickly"
                         className="md:col-span-2 md:col-start-2"
                     >
-                        <div className="aspect-video flex items-center justify-center gap-4">
-                            <Key className="w-28">shift</Key>
-                            <Key className="">alt</Key>
-                            <Key className="">C</Key>
-                        </div>
+                        <div className="flex items-center justify-center aspect-video bg-slate-950 rounded-2xl overflow-hidden">
+                            <Image
+                                src={currateImg}
+                                className="rounded-2xl"
+                                alt=""
+                            />
+                        </div>{" "}
                     </FeatureCard>
                 </div>
                 <div className="mt-8 flex flex-wrap gap-3 justify-center">
