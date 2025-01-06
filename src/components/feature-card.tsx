@@ -20,6 +20,7 @@ export default function FeatureCard(props: {
             <div className="content">
                 <h3 className="text-3xl font-medium mt-6">{title}</h3>
                 <p className="text-white/50 mt-2">
+                    {description}
                     <Button variant={"link"}>Visit Site</Button>
                 </p>
             </div>

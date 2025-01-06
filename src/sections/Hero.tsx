@@ -54,6 +54,10 @@ const Hero = () => {
         leftPointerAnimate,
         rightDesignAnimate,
         rightPointerAnimate,
+        leftDesignScope,
+        leftPointerScope,
+        rightDesignScope,
+        rightPointerScope,
     ]);
 
     return (
