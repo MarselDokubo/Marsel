@@ -6,6 +6,7 @@ const classes = cva("border h-12 rounded-full px-6 font-medium", {
         variant: {
             primary: "bg-lime-400 text-neutral-950 border-lime-400",
             secondary: "border-none md:border-white text-white bg-transparent",
+            neutral: "bg-white text-neutral-950",
         },
         size: {
             sm: "px-0",
@@ -15,7 +16,7 @@ const classes = cva("border h-12 rounded-full px-6 font-medium", {
 
 export default function Button(
     props: {
-        variant: "primary" | "secondary";
+        variant: "primary" | "secondary" | "neutral";
         size?: "sm";
     } & ButtonHTMLAttributes<HTMLButtonElement>
 ) {

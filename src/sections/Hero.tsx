@@ -6,8 +6,8 @@ import Image from "next/image";
 import Pointer from "@/components/pointer";
 import { motion, useAnimate } from "framer-motion";
 import { useEffect } from "react";
-import cursorYouImage from "@/assets/images/cursor-you.svg";
 import portrait from "@/assets/images/web-portrait.png";
+import Link from "next/link";
 
 const Hero = () => {
     const [leftDesignScope, leftDesignAnimate] = useAnimate();
@@ -61,12 +61,7 @@ const Hero = () => {
     ]);
 
     return (
-        <section
-            className="hero py-12 mt-20 md:mt-28 overflow-x-clip"
-            style={{
-                cursor: `url(${cursorYouImage.src}), auto `,
-            }}
-        >
+        <section className="hero py-12 -mt-8 lg:mt-8 overflow-x-hidden h-screen flex items-center justify-center">
             <div className="container relative">
                 <motion.div
                     ref={leftDesignScope}
@@ -100,7 +95,7 @@ const Hero = () => {
                     <Pointer name="Show Reel" color="red" />
                 </motion.div>
 
-                <div className="portrait size-32 rounded-full mx-auto mb-4">
+                <div className="portrait size-32 rounded-full mx-auto mb-1">
                     <Image src={portrait} alt="Profile Image" className="" />
                 </div>
                 <div className="flex justify-center">
@@ -108,10 +103,10 @@ const Hero = () => {
                         <span>👋</span> {"  "}I&apos;m Marsel. I specialize in
                     </div>
                 </div>
-                <h1 className="text-5xl md:text-7xl lg:text-[90px] tracking-tight font-medium text-center mt-6 text-white">
+                <h1 className="text-5xl md:text-7xl lg:text-[90px] tracking-tight font-medium text-center mt-2 md:mt-0 p-2 md:p-0 md:pb-2 text-transparent gradient-text relative z-10">
                     Crafting state-of-the-art digital experiences
                 </h1>
-                <p className="text-center text-lg md:text-2xl text-white/50 mt-8 max-w-2xl mx-auto">
+                <p className="text-center text-lg md:text-2xl text-white/50 md:mt-2 max-w-2xl mx-auto">
                     I apply cutting-edge tools to deliver feature-rich
                     applications that both feels great and satisfies client
                     requirements. Let me take your ideas from concept to{" "}
@@ -124,30 +119,48 @@ const Hero = () => {
                     </span>
                 </p>
                 <div className="flex rounded-full mt-8 justify-center items-center min-w-max max-w-lg mx-auto">
-                    <Button
-                        variant="primary"
-                        className="whitespace-nowrap flex items-center gap-2 m-2"
+                    <Link
+                        href={"mailto:connectmarsel@gmail.com"}
+                        target="_blank"
+                        className="font-medium"
                     >
-                        <span className="font-medium">SAY HI</span>
-                        {/* <span className="btn-icon flex items-center ">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                className="lucide lucide-send"
-                            >
-                                <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
-                                <path d="m21.854 2.147-10.94 10.939" />
-                            </svg>
-                        </span> */}
-                    </Button>
+                        <Button
+                            variant="neutral"
+                            className="whitespace-nowrap flex items-center gap-2 m-2"
+                        >
+                            Contact Me
+                        </Button>
+                    </Link>
                 </div>
+            </div>
+            <div className="works-carousel hidden md:flex md:gap-12 justify-center items-center relative">
+                {/* <div className="md:absolute md:-top-[280px] md:left-[190px] rounded-xl md:rounded-3xl overflow-hidden">
+                    <Image
+                        src={dummy3}
+                        alt=""
+                        width={265}
+                        height={301}
+                        className=""
+                    />
+                </div> */}
+                {/* <div className="rounded-xl md:rounded-3xl overflow-hidden">
+                    <Image src={dummy1} alt="" width={265} height={301} />
+                </div> */}
+                {/* <div className="overflow-hidden rounded-xl md:rounded-3xl">
+                    <Image
+                        src={quickPay}
+                        alt="MildPay Image"
+                        className="object-cover"
+                        width={330}
+                        height={350}
+                    />
+                </div> */}
+                {/* <div className="rounded-xl md:rounded-3xl overflow-hidden">
+                    <Image src={dummy2} alt="" width={272} height={294} />
+                </div> */}
+                {/* <div className="md:absolute md:-top-[280px] md:right-[190px] rounded-xl md:rounded-3xl overflow-hidden">
+                    <Image src={dummy1} alt="" width={265} height={301} />
+                </div> */}
             </div>
         </section>
     );

@@ -2,9 +2,9 @@ import Tag from "@/components/tag";
 import figmaIcon from "@/assets/images/figma-logo.svg";
 import notionLogo from "@/assets/images/notion-logo.svg";
 import slackLogo from "@/assets/images/slack-logo.svg";
+import githubLogo from "@/assets/images/github-logo.svg";
 import relumeLogo from "@/assets/images/relume-logo.svg";
 import framerLogo from "@/assets/images/framer-motion.svg";
-import githubLogo from "@/assets/images/github-logo.svg";
 import IntegrationColumn from "@/components/integration-column";
 
 const integrations = [
@@ -49,8 +49,9 @@ export default function Integrations() {
                 <div className="grid lg:grid-cols-2 items-center lg:gap-16">
                     <div className="">
                         <Tag>MY FORTE</Tag>
-                        <h2 className="text-5xl md:text-7xl  font-medium mt-6">
-                            Areas I <span className="text-lime-400">Excel</span>
+                        <h2 className="text-5xl md:text-7xl  font-medium mt-6 text-[rgb(204,204,204)]">
+                            Areas I{" "}
+                            <span className="text-lime-400/90">Excel</span>
                         </h2>
                         <p className="text-white/50 mt-4 text-lg">
                             In the course of my journey, I have picked up and

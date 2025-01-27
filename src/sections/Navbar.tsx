@@ -3,88 +3,141 @@ import Image from "next/image";
 import logoImage from "@/assets/images/logo_svg.svg";
 import { twMerge } from "tailwind-merge";
 import { HireMeBtn } from "@/components/hire-btn";
-import HomeIcon from "@/assets/images/nav-icons/house";
-import ProfileIcon from "@/assets/images/nav-icons/profile-icon";
-import ProjectIcon from "@/assets/images/nav-icons/project-icon";
-import FAQIcon from "@/assets/images/nav-icons/faq-icon";
-import { useFragmentContext } from "@/context/fragment-provider";
+import Link from "next/link";
+import { useState } from "react";
 
 export default function Navbar() {
-    const currentSection = useFragmentContext();
+    const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <section className="py-4 lg:py-8 fixed w-full top-0 z-50 ">
-            <div className="container max-w-5xl">
-                <div className="border border-white/15 rounded-full bg-neutral-950/70 backdrop-blur ">
-                    <div className="flex justify-between border border-white/15  rounded-full p-2 px-4 items-center ">
-                        <div className="">
-                            <Image
-                                src={logoImage}
-                                alt="logo Image"
-                                className="h-7 w-auto"
-                            />
-                        </div>
-                        <div className="nav-container flex-1 flex justify-center items-center  ">
-                            <nav className="flex justify-center items-center gap-8 font-medium">
-                                <a href={"#"} className="flex gap-1">
-                                    <HomeIcon
-                                        className={twMerge(
-                                            "md:hidden transtion duration-300 text-white/90",
-                                            (currentSection === "navigation" ||
-                                                currentSection ===
-                                                    "logo-ticker" ||
-                                                currentSection === "hero") &&
-                                                "text-lime-200"
-                                        )}
-                                    />
-                                    <span className="hidden md:inline-block">
-                                        Home
-                                    </span>
-                                </a>
-                                <a href={"#about"} className="flex gap-1">
-                                    <ProfileIcon
-                                        className={twMerge(
-                                            "md:hidden transtion duration-300 text-white/90",
-                                            currentSection === "introduction" &&
-                                                "text-lime-200"
-                                        )}
-                                    />
-                                    <span className="hidden md:inline-block">
+        <section className="lg:py-8 z-50 w-screen fixed top-0 text-white/70">
+            <div className="md:container px-6 py-8 md:py-4">
+                <div className=" flex justify-between items-center">
+                    <div className="">
+                        <Image
+                            src={logoImage}
+                            alt="logo Image"
+                            className="h-[40px] w-auto"
+                        />
+                    </div>
+                    <div className="border-[0.5px] border-neutral-950/20 rounded-full bg-[#17171799] backdrop-blur hidden md:block relative left-8">
+                        <div className="flex justify-between border border-neutral-800  rounded-full items-center ">
+                            <div className="nav-container flex justify-center items-center  ">
+                                <nav className="flex justify-center items-center gap-8 font-medium md:py-4 md:px-8 text-white/60">
+                                    <Link
+                                        href={"#"}
+                                        className="flex hover:text-white/90 transition-all duration-300"
+                                    >
+                                        Home{" "}
+                                    </Link>
+                                    <Link
+                                        href={"#about"}
+                                        className="flex hover:text-white/90 transition-all duration-500"
+                                    >
                                         About
-                                    </span>
-                                </a>
-                                <a href={"#projects"} className="flex gap-1">
-                                    <ProjectIcon
-                                        className={twMerge(
-                                            "md:hidden transtion duration-300 text-white/90",
-                                            (currentSection === "features" ||
-                                                currentSection ===
-                                                    "integrations") &&
-                                                "text-lime-200"
-                                        )}
-                                    />
-                                    <span className="hidden md:inline-block">
+                                    </Link>
+                                    <Link
+                                        href={"#projects"}
+                                        className="flex hover:text-white/90 transition-all duration-500"
+                                    >
                                         Works
-                                    </span>
-                                </a>
-                                <a href={"#faqs"} className="flex gap-1">
-                                    <FAQIcon
-                                        className={twMerge(
-                                            "md:hidden transtion duration-300 text-white/90",
-                                            currentSection === "faqs" &&
-                                                "text-lime-200"
-                                        )}
-                                    />
-                                    <span className="hidden md:inline-block">
+                                    </Link>
+                                    <Link
+                                        href={"#faqs"}
+                                        className="flex hover:text-white/90 transition-all duration-500"
+                                    >
                                         FAQs
-                                    </span>
-                                </a>
-                            </nav>
-                        </div>
-                        <div className="flex gap-4">
-                            <HireMeBtn />
+                                    </Link>
+                                </nav>
+                            </div>
                         </div>
                     </div>
+                    <div className="hidden md:flex gap-4">
+                        <HireMeBtn />
+                    </div>
+                    <div className="menu md:hidden border border-neutral-800 rounded-full p-2 bg-[#17171799] backdrop-blur">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="36"
+                            height="36"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            className="feather feather-menu"
+                            onClick={() => setIsOpen(!isOpen)}
+                        >
+                            <line
+                                x1="3"
+                                y1="6"
+                                x2="21"
+                                y2="6"
+                                className={twMerge(
+                                    "origin-left transition",
+                                    isOpen && "rotate-45 -translate-y-1"
+                                )}
+                            ></line>
+                            <line
+                                x1="3"
+                                y1="12"
+                                x2="21"
+                                y2="12"
+                                className={twMerge(
+                                    "transition",
+                                    isOpen && "opacity-0"
+                                )}
+                            ></line>
+                            <line
+                                x1="3"
+                                y1="18"
+                                x2="21"
+                                y2="18"
+                                className={twMerge(
+                                    "origin-left transition",
+                                    isOpen && "-rotate-45 translate-y-1"
+                                )}
+                            ></line>
+                        </svg>
+                    </div>
+                </div>
+                <div
+                    className={twMerge(
+                        "flex flex-col items-center gap-4 rounded-[27px] border border-neutral-800 bg-[#17171799] backdrop-blur md:hidden py-8 mt-4 text-xl font-medium text-white/60 transition-all duration-500 will-change-auto opacity-0 -translate-y-2",
+                        isOpen && "opacity-100 translate-y-0"
+                    )}
+                >
+                    <Link
+                        href={"#"}
+                        className="flex hover:text-white/90 transition-all duration-300"
+                    >
+                        Home{" "}
+                    </Link>
+                    <Link
+                        href={"#about"}
+                        className="flex hover:text-white/90 transition-all duration-500"
+                    >
+                        About
+                    </Link>
+                    <Link
+                        href={"#projects"}
+                        className="flex hover:text-white/90 transition-all duration-500"
+                    >
+                        Works
+                    </Link>
+                    <Link
+                        href={"#faqs"}
+                        className="flex hover:text-white/90 transition-all duration-500"
+                    >
+                        FAQs
+                    </Link>
+                    <Link
+                        href={"#faqs"}
+                        className="flex hover:text-white/90 transition-all duration-500"
+                    >
+                        Notify Me
+                    </Link>
                 </div>
             </div>
         </section>

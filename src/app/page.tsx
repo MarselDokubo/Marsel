@@ -1,11 +1,10 @@
 "use client";
 import { FragmentContext } from "@/context/fragment-provider";
-import CallToAction from "@/sections/CallToAction";
+import CTA from "@/sections/cta";
 import Faqs from "@/sections/Faqs";
 import Features from "@/sections/Features";
 import Footer from "@/sections/Footer";
 import Hero from "@/sections/Hero";
-import Integrations from "@/sections/Integrations";
 import Introduction from "@/sections/Introduction";
 import LogoTicker from "@/sections/LogoTicker";
 import Navbar from "@/sections/Navbar";
@@ -18,9 +17,8 @@ const sections = [
     { id: "logo-ticker", element: <LogoTicker /> },
     { id: "introduction", element: <Introduction /> },
     { id: "features", element: <Features /> },
-    { id: "integrations", element: <Integrations /> },
     { id: "faqs", element: <Faqs /> },
-    { id: "cta", element: <CallToAction /> },
+    { id: "cta", element: <CTA /> },
     { id: "footer", element: <Footer /> },
 ];
 
@@ -41,7 +39,7 @@ export default function Home() {
                         return (
                             <FragmentContext.Provider value={visibleSection}>
                                 <div
-                                    className="relative"
+                                    className="relative overflow-x-clip"
                                     id={section.id}
                                     ref={ref}
                                 >

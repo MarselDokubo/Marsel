@@ -23,21 +23,21 @@ export default function Introduction() {
     }, [wordIndex]);
     return (
         <section id="about" className="py-20 md:py-28 lg:py-40">
-            <div className="container">
+            <div className="px-4">
                 <div className="sticky top-32 md:top-36">
                     <div className="flex justify-center">
                         <Tag> Get To Know Me</Tag>
                     </div>
 
-                    <div className="text-3xl md:text-6xl text-center font-medium mt-10">
-                        <span className="">Nice to meet you!</span>{" "}
+                    <div className="text-3xl md:text-6xl text-center font-medium mt-10 px-0 pl-0 pr-0 md:container">
+                        <span className="text-white/90">Nice to meet you!</span>{" "}
                         <span className="">
                             {words.map((word, index) => (
                                 <span
                                     key={index}
                                     className={twMerge(
                                         "transition duration-500 text-white/15",
-                                        index < currentWord && "text-white"
+                                        index < currentWord && "text-white/90"
                                     )}
                                 >{`${word} `}</span>
                             ))}

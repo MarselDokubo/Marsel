@@ -22,7 +22,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${myFont.className} font-sans antialiased bg-black text-white`}
+                className={`${myFont.className} font-sans antialiased bg-neutral-950 text-white`}
             >
                 {children}
             </body>

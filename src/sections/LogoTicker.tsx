@@ -26,7 +26,7 @@ const logos = [
 
 export default function LogoTicker() {
     return (
-        <section className="py-24 overflow-x-clip">
+        <section className="md:py-24 overflow-x-hidden">
             <div className="container">
                 <div className="flex items-center justify-center">
                     <Tag>Tools in my belt</Tag>
