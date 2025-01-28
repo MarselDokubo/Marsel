@@ -34,6 +34,7 @@ export default function Features() {
                         title="Currate"
                         description="Integrate and automate seemlessly across different platforms."
                         className="md:col-span-2 lg:col-span-1"
+                        link="#"
                     >
                         <div className="gradient-circle relative flex items-center justify-center h-full w-full rounded-2xl aspect-video">
                             <div className="relative flex items-center justify-center h-full w-full overflow-hidden rounded-xl">
@@ -57,8 +58,9 @@ export default function Features() {
                     </FeatureCard>
                     <FeatureCard
                         title="Dionysus"
-                        description="Engage your client with prototypes that react to user actions"
+                        description="An AI powered collaborative platform with github integration for coordinating team workflows."
                         className="md:col-span-2 lg:col-span-1"
+                        link="#"
                     >
                         <div className="flex gap-2 flex-wrap">
                             <Avatar className="z-40 border-teal-700">
@@ -93,8 +95,9 @@ export default function Features() {
                     </FeatureCard>
                     <FeatureCard
                         title="QuickPay"
-                        description="Powerful commands to help you create design more quickly"
+                        description="A country based payment platform for web based products with clickstream monitoring integration."
                         className="md:col-span-2 md:col-start-2 lg:col-span-1"
+                        link="#"
                     >
                         <div className="bg-slate-300 relative flex items-center justify-center h-full w-full rounded-2xl">
                             <div className="relative -top-1 -left-1 flex items-center justify-center h-full w-full">

@@ -3,7 +3,7 @@ import Tag from "@/components/tag";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
-import Button from "@/components/button";
+// import Button from "@/components/button";
 
 // const faqs = [
 //     {
@@ -112,7 +112,7 @@ export default function Faqs() {
                         </div>
                     ))}
                 </div>
-                <form
+                {/* <form
                     action=""
                     id="faq"
                     className="flex flex-col max-w-xl mx-auto gap-2 mt-6"
@@ -131,7 +131,7 @@ export default function Faqs() {
                     <Button className="max-w-max self-end" variant="primary">
                         Submit
                     </Button>
-                </form>
+                </form> */}
             </div>
         </section>
     );
