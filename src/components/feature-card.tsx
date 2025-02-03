@@ -31,7 +31,7 @@ export default function FeatureCard(props: {
             <div className="image-container relative flex items-center justify-center rounded-[20px] aspect-[16/12] overflow-hidden bg-[rgb(17_17_17)]">
                 {children}
                 <div className="absolute bottom-3">
-                    <a href={link}>
+                    <a href={link} target="_blank">
                         <Button
                             variant={"secondary"}
                             className="rounded-full py-1 text-base bg-white backdrop-blur shadow-md"

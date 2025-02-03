@@ -2,8 +2,8 @@ import FeatureCard from "@/components/feature-card";
 import Tag from "@/components/tag";
 import Image from "next/image";
 import Avatar from "@/components/avatar";
-import mildpayImage from "@/assets/images/portfolio/MildPayy.png";
-import currateImage from "@/assets/images/portfolio/Currate.png";
+import qpayyImage from "@/assets/images/portfolio/qpayy_landing.png";
+import currateImage from "@/assets/images/portfolio/currate_landing.png";
 import avatar1 from "@/assets/images/avatar-ashwin-santiago.jpg";
 import avatar2 from "@/assets/images/avatar-lula-meyers.jpg";
 import avatar3 from "@/assets/images/avatar-florence-shaw.jpg";
@@ -36,25 +36,30 @@ export default function Features() {
                         className="md:col-span-2 lg:col-span-1"
                         link="#"
                     >
-                        <div className="gradient-circle relative flex items-center justify-center h-full w-full rounded-2xl aspect-video">
-                            <div className="relative flex items-center justify-center h-full w-full overflow-hidden rounded-xl">
+                        <div className="bg-slate-300 relative flex items-center justify-center h-full w-full rounded-2xl">
+                            <div className="relative -top-1 -left-1 flex items-center justify-center h-full w-full">
                                 <div
-                                    className="h-[150px] w-[288px]
-                            shadow-sm absolute inset-0 m-auto rounded-xl"
+                                    className="
+                            shadow-sm absolute inset-0 m-auto  rounded-xl w-[80%]"
                                 >
                                     <Image
                                         src={currateImage}
                                         alt="MildPay Image"
-                                        className="object-cover absolute left-[0px] -top-[30px] md:-top-[60px] m-auto w-[150%] h-[150%] md:w-[180%] md:h-[180%]"
+                                        className="object-cover absolute top-10 rounded-2xl m-auto"
                                     />
+                                </div>
+                                <div
+                                    className="
+                            shadow-sm absolute inset-0 m-auto  rounded-xl w-[80%]"
+                                >
                                     <Image
                                         src={currateImage}
                                         alt="MildPay Image"
-                                        className="object-cover absolute left-[0px] top-0 md:-top-[30px] m-auto w-[150%] h-[150%] md:w-[180%] md:h-[180%]"
+                                        className="object-cover absolute top-12 left-2 rounded-2xl m-auto"
                                     />
                                 </div>
                             </div>
-                        </div>
+                        </div>{" "}
                     </FeatureCard>
                     <FeatureCard
                         title="Dionysus"
@@ -94,31 +99,31 @@ export default function Features() {
                         </div>
                     </FeatureCard>
                     <FeatureCard
-                        title="QuickPay"
+                        title="QPayy"
                         description="A country based payment platform for web based products with clickstream monitoring integration."
                         className="md:col-span-2 md:col-start-2 lg:col-span-1"
-                        link="#"
+                        link="https://qpayy.vercel.app"
                     >
-                        <div className="bg-slate-300 relative flex items-center justify-center h-full w-full rounded-2xl">
+                        <div className=" relative flex items-center justify-center h-full w-full rounded-2xl">
                             <div className="relative -top-1 -left-1 flex items-center justify-center h-full w-full">
                                 <div
-                                    className="h-[150px] w-[288px]
-                            shadow-sm absolute inset-0 m-auto overflow-hidden rounded-xl"
+                                    className="
+                            shadow-sm absolute inset-0 m-auto  rounded-xl w-[80%]"
                                 >
                                     <Image
-                                        src={mildpayImage}
+                                        src={qpayyImage}
                                         alt="MildPay Image"
-                                        className="object-cover absolute -top-8 m-auto w-[150%] h-[150%]"
+                                        className="object-cover absolute top-10 rounded-2xl m-auto"
                                     />
                                 </div>
                                 <div
-                                    className="h-[150px] w-[288px]
-                            shadow-sm relative top-2 left-2  m-auto overflow-hidden rounded-xl"
+                                    className="
+                            shadow-sm absolute inset-0 m-auto  rounded-xl w-[80%]"
                                 >
                                     <Image
-                                        src={mildpayImage}
+                                        src={qpayyImage}
                                         alt="MildPay Image"
-                                        className="object-cover absolute -top-8 m-auto w-[150%] h-[150%]"
+                                        className="object-cover absolute top-12 left-2 rounded-2xl m-auto"
                                     />
                                 </div>
                             </div>
