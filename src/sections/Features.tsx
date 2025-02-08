@@ -2,8 +2,8 @@ import FeatureCard from "@/components/feature-card";
 import Tag from "@/components/tag";
 import Image from "next/image";
 import Avatar from "@/components/avatar";
-import qpayyImage from "@/assets/images/portfolio/qpayy_landing.png";
-import currateImage from "@/assets/images/portfolio/currate_landing.png";
+import qpayyImage from "@/assets/images/portfolio/qpayy.png";
+import currateImage from "@/assets/images/portfolio/Currate.png";
 import avatar1 from "@/assets/images/avatar-ashwin-santiago.jpg";
 import avatar2 from "@/assets/images/avatar-lula-meyers.jpg";
 import avatar3 from "@/assets/images/avatar-florence-shaw.jpg";
@@ -36,30 +36,18 @@ export default function Features() {
                         className="md:col-span-2 lg:col-span-1"
                         link="#"
                     >
-                        <div className="bg-slate-300 relative flex items-center justify-center h-full w-full rounded-2xl">
-                            <div className="relative -top-1 -left-1 flex items-center justify-center h-full w-full">
-                                <div
-                                    className="
-                            shadow-sm absolute inset-0 m-auto  rounded-xl w-[80%]"
-                                >
-                                    <Image
-                                        src={currateImage}
-                                        alt="MildPay Image"
-                                        className="object-cover absolute top-10 rounded-2xl m-auto"
-                                    />
-                                </div>
-                                <div
-                                    className="
-                            shadow-sm absolute inset-0 m-auto  rounded-xl w-[80%]"
-                                >
-                                    <Image
-                                        src={currateImage}
-                                        alt="MildPay Image"
-                                        className="object-cover absolute top-12 left-2 rounded-2xl m-auto"
-                                    />
-                                </div>
+                        <div className="overflow-hidden relative flex items-center justify-center h-full w-full rounded-2xl">
+                            <div
+                                className="
+                            shadow-sm absolute inset-0 m-auto"
+                            >
+                                <Image
+                                    src={currateImage}
+                                    alt="MildPay Image"
+                                    className="object-cover absolute m-auto"
+                                />
                             </div>
-                        </div>{" "}
+                        </div>
                     </FeatureCard>
                     <FeatureCard
                         title="Dionysus"
@@ -104,28 +92,16 @@ export default function Features() {
                         className="md:col-span-2 md:col-start-2 lg:col-span-1"
                         link="https://qpayy.vercel.app"
                     >
-                        <div className=" relative flex items-center justify-center h-full w-full rounded-2xl">
-                            <div className="relative -top-1 -left-1 flex items-center justify-center h-full w-full">
-                                <div
-                                    className="
-                            shadow-sm absolute inset-0 m-auto  rounded-xl w-[80%]"
-                                >
-                                    <Image
-                                        src={qpayyImage}
-                                        alt="MildPay Image"
-                                        className="object-cover absolute top-10 rounded-2xl m-auto"
-                                    />
-                                </div>
-                                <div
-                                    className="
-                            shadow-sm absolute inset-0 m-auto  rounded-xl w-[80%]"
-                                >
-                                    <Image
-                                        src={qpayyImage}
-                                        alt="MildPay Image"
-                                        className="object-cover absolute top-12 left-2 rounded-2xl m-auto"
-                                    />
-                                </div>
+                        <div className="overflow-hidden relative flex items-center justify-center h-full w-full rounded-2xl">
+                            <div
+                                className="
+                            shadow-sm absolute inset-0 m-auto"
+                            >
+                                <Image
+                                    src={qpayyImage}
+                                    alt="MildPay Image"
+                                    className="object-cover absolute m-auto opacity-90"
+                                />
                             </div>
                         </div>
                     </FeatureCard>

@@ -1,6 +1,5 @@
 import { ReactNode } from "react";
 import { twMerge } from "tailwind-merge";
-import { Button } from "./ui/button";
 
 export default function FeatureCard(props: {
     children: ReactNode;
@@ -9,7 +8,7 @@ export default function FeatureCard(props: {
     link: string;
     className?: string;
 }) {
-    const { children, title, description, className, link } = props;
+    const { children, title, description, className, } = props;
     return (
         <div
             className={twMerge(
@@ -30,7 +29,7 @@ export default function FeatureCard(props: {
             </div>
             <div className="image-container relative flex items-center justify-center rounded-[20px] aspect-[16/12] overflow-hidden bg-[rgb(17_17_17)]">
                 {children}
-                <div className="absolute bottom-3">
+                {/* <div className="absolute bottom-3">
                     <a href={link} target="_blank">
                         <Button
                             variant={"secondary"}
@@ -39,7 +38,7 @@ export default function FeatureCard(props: {
                             Live Site
                         </Button>
                     </a>
-                </div>
+                </div> */}
             </div>
             <div className="card-description my-5 px-3">
                 <p className="text-white/50 leading-5 mt-4 text-center ">
