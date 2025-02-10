@@ -29,7 +29,7 @@ export default function FeatureCard(props: {
                 </div>
             </div>
             <a href={link} className="image-container relative flex items-center justify-center rounded-[20px] aspect-[16/12] overflow-hidden bg-[rgb(17_17_17)] before:content-[''] before:h-full before:w-full before:bg-black/40 before:opacity-0 before:hover:opacity-100 before:absolute before:z-50 before:transition-all, before:duration-700">
-            <span className="absolute inset-0 top-[90%] left-[50%] m-auto h-full w-full opacity-0 transition-all duration-700 z-50"><LinkIcon className=""/></span>
+            <span className="absolute inset-0 top-[90%] left-[48%] m-auto h-full w-full opacity-0 transition-all duration-700 z-50"><LinkIcon className=""/></span>
             {children}
             </a>
             <div className="card-description my-5 px-3">
