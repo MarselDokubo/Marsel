@@ -30,11 +30,12 @@ export default function Features() {
                     Next-Gen <span className="text-lime-400/90">Apps</span>
                 </h2>
                 <div className="feature-cards mt-12 max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-4  lg:grid-cols-3 gap-8">
+
                     <FeatureCard
-                        title="Currate"
-                        description="Integrate and automate seemlessly across different platforms."
-                        className="md:col-span-2 lg:col-span-1"
-                        link="#"
+                        title="QPayy"
+                        description="A country based payment platform for web based products with clickstream monitoring integration."
+                        className="md:col-span-2 md:col-start-2 lg:col-span-1"
+                        link="https://qpayy.vercel.app"
                     >
                         <div className="overflow-hidden relative flex items-center justify-center h-full w-full rounded-2xl">
                             <div
@@ -42,18 +43,18 @@ export default function Features() {
                             shadow-sm absolute inset-0 m-auto"
                             >
                                 <Image
-                                    src={currateImage}
+                                    src={qpayyImage}
                                     alt="MildPay Image"
-                                    className="object-cover absolute m-auto"
+                                    className="object-cover absolute m-auto opacity-90"
                                 />
                             </div>
                         </div>
                     </FeatureCard>
-                    <FeatureCard
+                <FeatureCard
                         title="Dionysus"
                         description="An AI powered collaborative platform with github integration for coordinating team workflows."
                         className="md:col-span-2 lg:col-span-1"
-                        link="#"
+                        link="https://dionysus.vercel.app"
                     >
                         <div className="flex gap-2 flex-wrap">
                             <Avatar className="z-40 border-teal-700">
@@ -86,11 +87,12 @@ export default function Features() {
                             </Avatar>
                         </div>
                     </FeatureCard>
+
                     <FeatureCard
-                        title="QPayy"
-                        description="A country based payment platform for web based products with clickstream monitoring integration."
-                        className="md:col-span-2 md:col-start-2 lg:col-span-1"
-                        link="https://qpayy.vercel.app"
+                        title="Currate"
+                        description="Integrate and automate seemlessly across different platforms."
+                        className="md:col-span-2 lg:col-span-1"
+                        link="https://curate.vercel.app"
                     >
                         <div className="overflow-hidden relative flex items-center justify-center h-full w-full rounded-2xl">
                             <div
@@ -98,9 +100,9 @@ export default function Features() {
                             shadow-sm absolute inset-0 m-auto"
                             >
                                 <Image
-                                    src={qpayyImage}
+                                    src={currateImage}
                                     alt="MildPay Image"
-                                    className="object-cover absolute m-auto opacity-90"
+                                    className="object-cover absolute m-auto"
                                 />
                             </div>
                         </div>
