@@ -133,10 +133,10 @@ export default function Navbar() {
                         FAQs
                     </Link>
                     <Link
-                        href={"#faqs"}
+                        href={"/resume.pdf"}
                         className="flex hover:text-white/90 transition-all duration-500"
                     >
-                        Notify Me
+                        Resume
                     </Link>
                 </div>
             </div>
