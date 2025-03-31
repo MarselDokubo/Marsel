@@ -1,4 +1,4 @@
-import logoImage from "@/assets/images/logo.svg";
+import logoImage from "@/assets/images/craft_logo.svg"
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
 const footerLinks = [

@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import logoImage from "@/assets/images/logo_svg.svg";
+import logoImage from "@/assets/images/craft_logo.svg";
 import { twMerge } from "tailwind-merge";
 import { HireMeBtn } from "@/components/hire-btn";
 import Link from "next/link";
