@@ -61,7 +61,7 @@ const Hero = () => {
     ]);
 
     return (
-        <section className="hero py-12 -mt-6 lg:mt-8 overflow-x-hidden h-screen flex items-center justify-center">
+        <section className="hero py-12 lg:mt-8 overflow-x-hidden h-screen flex items-center justify-center">
             <div className="container relative">
                 <motion.div
                     ref={leftDesignScope}
